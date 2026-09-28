@@ -1,25 +1,25 @@
 class Podshare < Formula
   desc "Share a coding-agent session, with its files, as an encrypted pod someone else can resume"
   homepage "https://github.com/noclipper/podshare"
-  version "0.3.1"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/noclipper/podshare/releases/download/v0.3.1/podshare-aarch64-apple-darwin.tar.xz"
-      sha256 "f131eabbd1a8229283a0ce5780d2f0a4d19c3da7f0645b2ece30502a62bf84fe"
+      url "https://github.com/noclipper/podshare/releases/download/v0.4.0/podshare-aarch64-apple-darwin.tar.xz"
+      sha256 "1974602bab37eed7a1783fb59b28fd44c04da36eb7f1fab9336c335b209b3d81"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/noclipper/podshare/releases/download/v0.3.1/podshare-x86_64-apple-darwin.tar.xz"
-      sha256 "f3acea1763aeb2e8df202eaf1ee6c659c6810f9854bf1455f7f24163a1d2bd84"
+      url "https://github.com/noclipper/podshare/releases/download/v0.4.0/podshare-x86_64-apple-darwin.tar.xz"
+      sha256 "571b488bc53b0bdc66b81c091967510e3afae7998f416c94c16357ead43ed1e7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/noclipper/podshare/releases/download/v0.3.1/podshare-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "360a585892d248b93fbbdb2d5baf01893d1344cf4d36514de869d69fb6edfbb0"
+      url "https://github.com/noclipper/podshare/releases/download/v0.4.0/podshare-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a6f416214bcd5e11a83788692ea3c6871a36f2ae65982edd59d490df5d4bcb6e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/noclipper/podshare/releases/download/v0.3.1/podshare-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7fd7b7214fc8c795f39d1a8a7e7c3cc91737ac2490d2a42c6d79c6d32ff25883"
+      url "https://github.com/noclipper/podshare/releases/download/v0.4.0/podshare-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a96cda402a01b9bb76b50c76279326d6f37b445af7093762984b52dfea28ab18"
     end
   end
   license "FSL-1.1-ALv2"
@@ -28,6 +28,7 @@ class Podshare < Formula
     "aarch64-apple-darwin": {},
     "aarch64-unknown-linux-gnu": {},
     "x86_64-apple-darwin": {},
+    "x86_64-pc-windows-gnu": {},
     "x86_64-unknown-linux-gnu": {}
   }
 
