@@ -1,25 +1,25 @@
 class Podshare < Formula
   desc "Share a coding-agent session, with its files, as an encrypted pod someone else can resume"
   homepage "https://github.com/noclipper/podshare"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/noclipper/podshare/releases/download/v0.2.0/podshare-aarch64-apple-darwin.tar.xz"
-      sha256 "bf4fd19b09675fdf17afc6c2e7b9b069f52c8361e579eb49fac147a20d4a3d56"
+      url "https://github.com/noclipper/podshare/releases/download/v0.3.0/podshare-aarch64-apple-darwin.tar.xz"
+      sha256 "c11ab1e5baa8b86dc09851ed8ba8f0ca62ab40c20abb550d6851738ee8fadb05"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/noclipper/podshare/releases/download/v0.2.0/podshare-x86_64-apple-darwin.tar.xz"
-      sha256 "c7b812cff6bdbae383e80fb345766c7590bc8e4c77ca4f7e507750ccd2fef172"
+      url "https://github.com/noclipper/podshare/releases/download/v0.3.0/podshare-x86_64-apple-darwin.tar.xz"
+      sha256 "895e2b7c8feefbc83c20da8b991f328e492407770431d6a9124f67de48c909b3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/noclipper/podshare/releases/download/v0.2.0/podshare-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3995d70aeaa10f4b702ed6b48b535b1d888ecc036af41f2543c6979955a0927f"
+      url "https://github.com/noclipper/podshare/releases/download/v0.3.0/podshare-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f8c435777397f5d14b1df66bb3248a96bbf69b87aae77d03d921d78c5e50a692"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/noclipper/podshare/releases/download/v0.2.0/podshare-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "096b72a3b5aa46e04ed59b1e5b4780d57d4504a505e528ad74c5eccb98a49f1c"
+      url "https://github.com/noclipper/podshare/releases/download/v0.3.0/podshare-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e30fe59030c41a34b9fee5f53447047ccc816130da23243b60aced029a893402"
     end
   end
   license "FSL-1.1-ALv2"
